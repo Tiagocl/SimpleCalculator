@@ -20,9 +20,39 @@ body {
     border-radius: 39px;
 }
 
+.result-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    
+}
+
+span {
+    padding-right: 20px;
+}
+
+.text span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #818181;
+    margin-bottom: 10px;
+}
+
+.result span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: white;
+
+}
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 25%);
+   
 
 }
 
@@ -71,7 +101,7 @@ body {
 #e,
 #pi,
 #sin,
-#deg {
+#square-root {
     font-size: 17px;
     border-radius: 24px;
 }
