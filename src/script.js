@@ -1,7 +1,7 @@
 function evaluateExpression(expression) {
 
     try {
-
+        expression = expression.replace(/sin/g, 'Math.sin');
         const fn = new Function('return ' + expression);
         return fn();
 
@@ -64,9 +64,12 @@ function handleCalculator() {
                 text.textContent = textValue;
             }
             else if (button.textContent === 'sin') {
-                textValue += 'Math.sin(';
-                text.textContent = textValue + ')';
-
+                textValue += 'sin(';
+                text.textContent = textValue;
+            }
+            else if (button.textContent === ')') {
+                textValue += ')';
+                text.textContent = textValue;
             }
             else {
                 textValue += button.textContent;

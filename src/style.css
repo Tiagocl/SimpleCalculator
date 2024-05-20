@@ -18,6 +18,7 @@ body {
     height: 500px;
     width: 260px;
     border-radius: 39px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
 }
 
 .result-container {
@@ -28,7 +29,9 @@ body {
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
-    
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 20px
 }
 
 span {
@@ -66,6 +69,7 @@ span {
     width: 50px;
     height: 40px;
     margin: 5px 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 
@@ -101,7 +105,7 @@ span {
 #e,
 #pi,
 #sin,
-#square-root {
+#par {
     font-size: 17px;
     border-radius: 24px;
 }
